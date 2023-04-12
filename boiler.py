@@ -6,7 +6,6 @@
 #
 
 import sys
-import os
 
 extensions = {
     "py": lambda name: f"#\n#   {name}.\n#       By L3pu5, L3pu5_Hare\n#",
