@@ -13,8 +13,12 @@ extensions = {
     "cpp": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//",
     "c": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//",
     "js": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//",
+    "jsx": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//",
     "rs": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//",
 }
+
+c_headerFile = lambda name: f"#ifndef {name}\n#define {name}\n\n"
+
 
 def usage():
     print("Usage:       boiler.py newfile")
@@ -24,6 +28,12 @@ def write_file(name, ext):
     file = open("./" + name + "." + ext, "w")
     if ext in extensions:
         file.write(extensions[ext](name))
+        if ext == "c":
+            headerFile = open(f"./{name}.h", "w")
+            headerFile.write(extensions[ext](name))
+            headerFile.write(c_headerFile(name))
+            headerFile.flush()
+            headerFile.close() 
     file.flush()
     file.close()
 
