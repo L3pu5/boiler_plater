@@ -8,13 +8,13 @@
 import sys
 
 extensions = {
-    "py": lambda name: f"#\n#   {name}.\n#       By L3pu5, L3pu5_Hare\n#",
-    "cs": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//",
-    "cpp": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//",
-    "c": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//",
-    "js": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//",
-    "jsx": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//",
-    "rs": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//",
+    "py": lambda name: f"#\n#   {name}.\n#       By L3pu5, L3pu5_Hare\n#\n",
+    "cs": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//\n",
+    "cpp": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//\n",
+    "c": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//\n",
+    "js": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//\n",
+    "jsx": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//\n",
+    "rs": lambda name: f"//\n//   {name}.\n//       By L3pu5, L3pu5_Hare\n//\n",
 }
 
 c_headerFile = lambda name: f"#ifndef {name}\n#define {name}\n\n"
